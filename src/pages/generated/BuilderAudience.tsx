@@ -18,8 +18,8 @@ export default function BuilderAudience() {
   </a>
   <span className="builder-title" style={{ fontSize: 'var(--text-sm)', fontWeight: '600', color: 'var(--ink-mid)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>Yangi so'rovnoma · Ijtimoiy tarmoqlardagi reklama</span>
   <div style={{ display: 'flex', gap: '10px' }}>
-    <button type="button" id="btn-save-draft" className="btn btn-secondary" style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-sm)', padding: '9px 16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--glass-border)', background: 'var(--glass)', color: 'var(--ink)', cursor: 'pointer', boxShadow: 'var(--shadow-sm),var(--glass-inner)', transition: 'background .12s' }} style-hover="background:var(--glass-strong)">Qoralama saqlash</button>
-    <button type="button" id="btn-next-step" className="btn btn-primary" style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-sm)', padding: '9px 18px', borderRadius: 'var(--radius-md)', border: '1px solid rgba(255,255,255,.6)', background: 'linear-gradient(180deg,var(--mint-500),var(--mint-600))', color: '#fff', cursor: 'pointer', boxShadow: 'var(--glow-mint),inset 0 1px 0 rgba(255,255,255,.35)', transition: 'filter .12s' }} style-hover="filter:brightness(1.08)">Keyingi: Mukofot</button>
+    <button type="button" id="btn-save-draft" className="btn btn-secondary hv-1" style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-sm)', padding: '9px 16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--glass-border)', background: 'var(--glass)', color: 'var(--ink)', cursor: 'pointer', boxShadow: 'var(--shadow-sm),var(--glass-inner)', transition: 'background .12s' }}>Qoralama saqlash</button>
+    <button type="button" id="btn-next-step" className="btn btn-primary hv-2" style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-sm)', padding: '9px 18px', borderRadius: 'var(--radius-md)', border: '1px solid rgba(255,255,255,.6)', background: 'linear-gradient(180deg,var(--mint-500),var(--mint-600))', color: '#fff', cursor: 'pointer', boxShadow: 'var(--glow-mint),inset 0 1px 0 rgba(255,255,255,.35)', transition: 'filter .12s' }}>Keyingi: Mukofot</button>
   </div>
 </header>
 
@@ -166,46 +166,7 @@ export default function BuilderAudience() {
   </div>
 
   
-  <section className="panel-variants" data-screen-label="Panel holatlari" style={{ marginTop: '64px' }}>
-    <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-xl)', fontWeight: '700', margin: '0 0 6px' }}>Panel holatlari</h2>
-    <p style={{ margin: '0 0 20px', fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }}>O'ng paneldagi uchta holat — auditoriya torayganda rang va xabar o'zgaradi.</p>
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', maxWidth: '560px' }}>
-
-      <div className="variant">
-        <p style={{ margin: '0 0 8px', fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', letterSpacing: '.06em', color: 'var(--ink-soft)' }}>NORMAL</p>
-        <div className="match-panel is-normal" data-variant="normal" style={{ position: 'relative', borderRadius: '20px', overflow: 'hidden', background: 'linear-gradient(155deg,#0E201C 0%,#123128 60%,#175A43 130%)', boxShadow: 'var(--shadow-glass)', border: '1px solid rgba(255,255,255,.14)', padding: '24px' }}>
-          <span style={{ display: 'block', fontFamily: 'var(--font-display)', fontSize: '56px', fontWeight: '800', letterSpacing: '-.02em', lineHeight: '1', color: '#7FE8C3', textShadow: '0 0 28px rgba(98,201,163,.5)', fontVariantNumeric: 'tabular-nums' }}>1 240</span>
-          <span style={{ display: 'block', fontSize: 'var(--text-base)', color: 'rgba(255,255,255,.75)', marginTop: '8px' }}>ta panelist mos keladi</span>
-          <p style={{ display: 'flex', alignItems: 'flex-start', gap: '9px', margin: '14px 0 0', padding: '10px 13px', borderRadius: 'var(--radius-md)', background: 'rgba(98,201,163,.12)', border: '1px solid rgba(98,201,163,.3)', fontSize: 'var(--text-sm)', fontWeight: '500', color: '#7FE8C3' }}>
-            <svg width={15} height={15} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" style={{ flex: 'none', marginTop: '2px' }}><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>
-            Yetarli auditoriya — javoblar odatda 48 soat ichida yig'iladi</p>
-        </div>
-      </div>
-
-      <div className="variant">
-        <p style={{ margin: '0 0 8px', fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', letterSpacing: '.06em', color: 'var(--ink-soft)' }}>OGOHLANTIRISH · 180 TA MOSLIK</p>
-        <div className="match-panel is-warning" data-variant="warning" style={{ position: 'relative', borderRadius: '20px', overflow: 'hidden', background: 'linear-gradient(155deg,#231A08 0%,#3A2C10 60%,#6B5116 130%)', boxShadow: 'var(--shadow-glass)', border: '1px solid rgba(255,255,255,.14)', padding: '24px' }}>
-          <span style={{ display: 'block', fontFamily: 'var(--font-display)', fontSize: '56px', fontWeight: '800', letterSpacing: '-.02em', lineHeight: '1', color: '#F0C46A', textShadow: '0 0 28px rgba(240,196,106,.45)', fontVariantNumeric: 'tabular-nums' }}>180</span>
-          <span style={{ display: 'block', fontSize: 'var(--text-base)', color: 'rgba(255,255,255,.75)', marginTop: '8px' }}>ta panelist mos keladi</span>
-          <p style={{ display: 'flex', alignItems: 'flex-start', gap: '9px', margin: '14px 0 0', padding: '10px 13px', borderRadius: 'var(--radius-md)', background: 'rgba(240,196,106,.12)', border: '1px solid rgba(240,196,106,.35)', fontSize: 'var(--text-sm)', fontWeight: '500', color: '#F0C46A' }}>
-            <svg width={15} height={15} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true" style={{ flex: 'none', marginTop: '2px' }}><path d="M12 3l9 17H3z"></path><path d="M12 10v4M12 17.5v.5"></path></svg>
-            Tor auditoriya — javob yig'ish sekin ketishi mumkin</p>
-        </div>
-      </div>
-
-      <div className="variant">
-        <p style={{ margin: '0 0 8px', fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', letterSpacing: '.06em', color: 'var(--ink-soft)' }}>BLOKLANGAN · 34 TA MOSLIK</p>
-        <div className="match-panel is-blocked" data-variant="blocked" style={{ position: 'relative', borderRadius: '20px', overflow: 'hidden', background: 'linear-gradient(155deg,#240D11 0%,#3A1219 60%,#6E2230 130%)', boxShadow: 'var(--shadow-glass)', border: '1px solid rgba(255,255,255,.14)', padding: '24px' }}>
-          <span style={{ display: 'block', fontFamily: 'var(--font-display)', fontSize: '56px', fontWeight: '800', letterSpacing: '-.02em', lineHeight: '1', color: '#F08A9B', textShadow: '0 0 28px rgba(240,138,155,.45)', fontVariantNumeric: 'tabular-nums' }}>34</span>
-          <span style={{ display: 'block', fontSize: 'var(--text-base)', color: 'rgba(255,255,255,.75)', marginTop: '8px' }}>ta panelist mos keladi</span>
-          <p style={{ display: 'flex', alignItems: 'flex-start', gap: '9px', margin: '14px 0 0', padding: '10px 13px', borderRadius: 'var(--radius-md)', background: 'rgba(240,138,155,.12)', border: '1px solid rgba(240,138,155,.35)', fontSize: 'var(--text-sm)', fontWeight: '500', color: '#F08A9B' }}>
-            <svg width={15} height={15} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true" style={{ flex: 'none', marginTop: '2px' }}><circle cx="12" cy="12" r="9"></circle><path d="M5.5 5.5l13 13"></path></svg>
-            Juda tor auditoriya — e'lon qilib bo'lmaydi</p>
-          <button type="button" disabled style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-sm)', padding: '10px 18px', borderRadius: 'var(--radius-md)', border: '1px solid rgba(255,255,255,.15)', background: 'rgba(255,255,255,.08)', color: 'rgba(255,255,255,.35)', cursor: 'not-allowed', marginTop: '14px' }}>Keyingi: Mukofot</button>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 </main>
     </>
   );

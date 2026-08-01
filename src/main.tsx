@@ -6,6 +6,7 @@ import './styles/tokens.css';
 import './styles/base.css';
 import './styles/layout.css';
 import './styles/interactions.css';
+import './styles/hover.generated.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

@@ -17,3 +17,21 @@ cheap forever. Hand-converting would have made every design change expensive.
 ## 2026-08-02 — Verify distributions, not just types
 A typechecked weights table can still sum to 0.97 and silently skew the seeded
 panel. Assert the sums in a check, not by reading.
+
+## 2026-08-02 — Breadth before depth was the wrong order
+Wiring navigation across all 14 static screens made the app *look* functional
+and made every unbuilt feature feel like a bug. One screen working end to end
+would have communicated progress honestly. Rule: finish a flow before making the
+next one reachable. Reachability is a promise.
+
+## 2026-08-02 — Shared ids across pages are not unique keys
+`btn-finish-registration` exists only on the creator page, but I mapped it to
+the taker dashboard from memory instead of checking. Result: creators landed in
+the taker app. Rule: grep for an id before routing it, and never assume the
+element lives where the name suggests.
+
+## 2026-08-02 — Unknown attributes are signals, not noise
+The converter silently dropped `style-hover` (150 occurrences of real design
+intent) and I then told the user the hovers "were never there". Rule: when a
+converter meets an attribute it doesn't recognise, log it and investigate rather
+than discarding it.

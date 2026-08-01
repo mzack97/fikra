@@ -18,8 +18,8 @@ export default function BuilderReward() {
   </a>
   <span className="builder-title" style={{ fontSize: 'var(--text-sm)', fontWeight: '600', color: 'var(--ink-mid)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>Yangi so'rovnoma · Ijtimoiy tarmoqlardagi reklama</span>
   <div style={{ display: 'flex', gap: '10px' }}>
-    <button type="button" id="btn-save-draft" className="btn btn-secondary" style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-sm)', padding: '9px 16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--glass-border)', background: 'var(--glass)', color: 'var(--ink)', cursor: 'pointer', boxShadow: 'var(--shadow-sm),var(--glass-inner)', transition: 'background .12s' }} style-hover="background:var(--glass-strong)">Qoralama saqlash</button>
-    <button type="button" id="btn-next-step" className="btn btn-primary" style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-sm)', padding: '9px 18px', borderRadius: 'var(--radius-md)', border: '1px solid rgba(255,255,255,.6)', background: 'linear-gradient(180deg,var(--mint-500),var(--mint-600))', color: '#fff', cursor: 'pointer', boxShadow: 'var(--glow-mint),inset 0 1px 0 rgba(255,255,255,.35)', transition: 'filter .12s' }} style-hover="filter:brightness(1.08)">Keyingi: Tekshirish</button>
+    <button type="button" id="btn-save-draft" className="btn btn-secondary hv-1" style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-sm)', padding: '9px 16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--glass-border)', background: 'var(--glass)', color: 'var(--ink)', cursor: 'pointer', boxShadow: 'var(--shadow-sm),var(--glass-inner)', transition: 'background .12s' }}>Qoralama saqlash</button>
+    <button type="button" id="btn-next-step" className="btn btn-primary hv-2" style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-sm)', padding: '9px 18px', borderRadius: 'var(--radius-md)', border: '1px solid rgba(255,255,255,.6)', background: 'linear-gradient(180deg,var(--mint-500),var(--mint-600))', color: '#fff', cursor: 'pointer', boxShadow: 'var(--glow-mint),inset 0 1px 0 rgba(255,255,255,.35)', transition: 'filter .12s' }}>Keyingi: Tekshirish</button>
   </div>
 </header>
 
@@ -74,33 +74,11 @@ export default function BuilderReward() {
       </dl>
     </div>
 
-    <button type="button" id="btn-continue" className="btn btn-primary" style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-md)', padding: '13px 20px', borderRadius: 'var(--radius-md)', border: '1px solid rgba(255,255,255,.6)', background: 'linear-gradient(180deg,var(--mint-500),var(--mint-600))', color: '#fff', cursor: 'pointer', width: '100%', marginTop: '20px', boxShadow: 'var(--glow-mint),inset 0 1px 0 rgba(255,255,255,.35)', transition: 'filter .12s' }} style-hover="filter:brightness(1.08)">Davom etish</button>
+    <button type="button" id="btn-continue" className="btn btn-primary hv-2" style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-md)', padding: '13px 20px', borderRadius: 'var(--radius-md)', border: '1px solid rgba(255,255,255,.6)', background: 'linear-gradient(180deg,var(--mint-500),var(--mint-600))', color: '#fff', cursor: 'pointer', width: '100%', marginTop: '20px', boxShadow: 'var(--glow-mint),inset 0 1px 0 rgba(255,255,255,.35)', transition: 'filter .12s' }}>Davom etish</button>
   </section>
 
   
-  <section className="reward-card is-blocked" data-screen-label="Bloklangan holat" style={{ marginTop: '48px' }}>
-    <p style={{ margin: '0 0 10px', fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', letterSpacing: '.06em', color: 'var(--ink-soft)' }}>BLOKLANGAN HOLAT — MUKOFOT JUDA PAST</p>
-    <div style={{ background: 'var(--glass)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', border: '1px solid var(--glass-border)', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-glass),var(--glass-inner)', padding: '28px 24px' }}>
-      <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-lg)', fontWeight: '700', margin: '0 0 22px' }}>Mukofot va byudjet</h2>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: '16px', marginBottom: '18px' }}>
-        <div className="form-field">
-          <label htmlFor="input-responses-blocked" style={{ display: 'block', fontWeight: '600', fontSize: 'var(--text-sm)', marginBottom: '6px' }}>Kerakli javoblar soni</label>
-          <input id="input-responses-blocked" type="number" defaultValue="1000" readOnly style={{ width: '100%', boxSizing: 'border-box', fontFamily: 'var(--font-body)', fontSize: 'var(--text-md)', fontWeight: '600', color: 'var(--ink)', padding: '11px 12px', border: '1px solid var(--line-strong)', borderRadius: 'var(--radius-md)', background: 'rgba(255,255,255,.5)', fontVariantNumeric: 'tabular-nums' }} />
-        </div>
-        <div className="form-field has-error">
-          <label htmlFor="input-reward-blocked" style={{ display: 'block', fontWeight: '600', fontSize: 'var(--text-sm)', marginBottom: '6px' }}>Har bir javob uchun mukofot</label>
-          <div style={{ display: 'flex', alignItems: 'stretch', border: '1px solid var(--danger)', borderRadius: 'var(--radius-md)', background: 'rgba(255,255,255,.5)', boxShadow: '0 0 0 3px var(--danger-glass)', overflow: 'hidden' }}>
-            <input id="input-reward-blocked" type="number" defaultValue="1500" readOnly aria-invalid="true" aria-describedby="reward-blocked-warning" style={{ flex: '1', minWidth: '0', fontFamily: 'var(--font-body)', fontSize: 'var(--text-md)', fontWeight: '600', color: 'var(--ink)', padding: '11px 12px', border: '0', background: 'transparent', fontVariantNumeric: 'tabular-nums', outlineOffset: '-2px' }} />
-            <span style={{ display: 'flex', alignItems: 'center', padding: '0 12px', background: 'rgba(255,255,255,.55)', borderLeft: '1px solid var(--line)', fontWeight: '600', color: 'var(--ink-mid)', fontSize: 'var(--text-sm)' }}>so'm</span>
-          </div>
-        </div>
-      </div>
-      <p className="reward-warning" id="reward-blocked-warning" style={{ display: 'flex', gap: '10px', alignItems: 'flex-start', margin: '0 0 18px', padding: '12px 14px', borderRadius: 'var(--radius-md)', background: 'var(--danger-glass)', border: '1px solid var(--danger-glass-border)', fontSize: 'var(--text-sm)', color: 'var(--danger)', fontWeight: '500' }}>
-        <svg width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true" style={{ flex: 'none', marginTop: '2px' }}><path d="M12 3l9 17H3z"></path><path d="M12 10v4M12 17.5v.5"></path></svg>
-        So'rovnomangiz taxminan 6 daqiqa davom etadi. Bunday uzunlik uchun eng kam mukofot 3 000 so'm. Mukofotni oshiring yoki 4 ta savolni olib tashlang.</p>
-      <button type="button" id="btn-continue-blocked" className="btn btn-primary" disabled style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-md)', padding: '13px 20px', borderRadius: 'var(--radius-md)', border: '1px solid var(--line)', background: 'var(--glass-soft)', color: 'var(--ink-soft)', cursor: 'not-allowed', width: '100%' }}>Davom etish</button>
-    </div>
-  </section>
+  
 </main>
     </>
   );

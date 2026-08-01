@@ -36,7 +36,7 @@ export default function RegisterCreator() {
           <span style={{ display: 'block', fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }}>G'oya yoki yangi mahsulotni tekshirish</span>
         </span>
       </label>
-      <label className="type-card" data-type="company" style={{ display: 'flex', gap: '14px', alignItems: 'flex-start', padding: '16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--line)', background: 'rgba(255,255,255,.35)', cursor: 'pointer' }} style-hover="background:var(--glass)">
+      <label className="type-card hv-15" data-type="company" style={{ display: 'flex', gap: '14px', alignItems: 'flex-start', padding: '16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--line)', background: 'rgba(255,255,255,.35)', cursor: 'pointer' }}>
         <input type="radio" name="creator-type" id="type-company" style={{ width: '18px', height: '18px', accentColor: 'var(--mint-600)', margin: '2px 0 0', flex: 'none' }} />
         <span className="type-icon" style={{ flex: 'none', width: '40px', height: '40px', borderRadius: '12px', background: 'rgba(61,111,180,.14)', border: '1px solid var(--blue-glass-border)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
           <svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#3D6FB4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M4 21V5a1 1 0 011-1h8a1 1 0 011 1v16M14 9h5a1 1 0 011 1v11M4 21h17"></path><path d="M7.5 8h2M7.5 12h2M7.5 16h2M17 13h1M17 17h1"></path></svg>
@@ -46,7 +46,7 @@ export default function RegisterCreator() {
           <span style={{ display: 'block', fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }}>Mijozlarni o'rganayotgan biznes</span>
         </span>
       </label>
-      <label className="type-card" data-type="researcher" style={{ display: 'flex', gap: '14px', alignItems: 'flex-start', padding: '16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--line)', background: 'rgba(255,255,255,.35)', cursor: 'pointer' }} style-hover="background:var(--glass)">
+      <label className="type-card hv-15" data-type="researcher" style={{ display: 'flex', gap: '14px', alignItems: 'flex-start', padding: '16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--line)', background: 'rgba(255,255,255,.35)', cursor: 'pointer' }}>
         <input type="radio" name="creator-type" id="type-researcher" style={{ width: '18px', height: '18px', accentColor: 'var(--mint-600)', margin: '2px 0 0', flex: 'none' }} />
         <span className="type-icon" style={{ flex: 'none', width: '40px', height: '40px', borderRadius: '12px', background: 'var(--amber-glass)', border: '1px solid var(--amber-glass-border)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
           <svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#A8731C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6"></circle><path d="M15.5 15.5L20 20"></path><path d="M8.5 11h5M11 8.5v5"></path></svg>
@@ -110,7 +110,7 @@ export default function RegisterCreator() {
     </div>
     <p className="resend-timer" data-element="resend-timer" style={{ margin: '0 0 14px', textAlign: 'center', fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }}>Qayta yuborish: <span style={{ fontWeight: '600', color: 'var(--ink)', fontVariantNumeric: 'tabular-nums' }}>0:{/* BIND: resendSeconds */}</span></p>
     <div className="demo-notice" style={{ border: '1px dashed var(--line-strong)', borderRadius: 'var(--radius-md)', background: 'var(--glass-soft)', padding: '10px 14px', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', color: 'var(--ink-mid)', marginBottom: '20px' }}>Demo rejimi — kod: 000000</div>
-    <button type="button" id="btn-finish-registration" className="btn btn-primary" style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-md)', padding: '13px 20px', borderRadius: 'var(--radius-md)', border: '1px solid rgba(255,255,255,.6)', background: 'linear-gradient(180deg,var(--mint-500),var(--mint-600))', color: '#fff', cursor: 'pointer', width: '100%', boxShadow: 'var(--glow-mint),inset 0 1px 0 rgba(255,255,255,.35)', transition: 'filter .12s' }} style-hover="filter:brightness(1.08)">Ro'yxatdan o'tish</button>
+    <button type="button" id="btn-finish-registration" className="btn btn-primary hv-2" style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-md)', padding: '13px 20px', borderRadius: 'var(--radius-md)', border: '1px solid rgba(255,255,255,.6)', background: 'linear-gradient(180deg,var(--mint-500),var(--mint-600))', color: '#fff', cursor: 'pointer', width: '100%', boxShadow: 'var(--glow-mint),inset 0 1px 0 rgba(255,255,255,.35)', transition: 'filter .12s' }}>Ro'yxatdan o'tish</button>
   </section>
 </main>
     </>

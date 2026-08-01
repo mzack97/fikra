@@ -1,4 +1,7 @@
-// AUTO-GENERATED from the Phase 1 design export by tools/convert.py
+import TargetingWidget from '../components/TargetingWidget';
+
+// Graduated from the design export: the targeting section is now live.
+// Regenerating this page from the design would overwrite that — re-diff first.
 // Static render of the design. Logic is added in the build phase.
 // {/* BIND: x */} markers show where the design expected dynamic data.
 // Re-runnable: regenerate after a design change, then re-apply logic.
@@ -28,10 +31,10 @@ export default function Landing() {
 
 <header className="app-header" style={{ position: 'sticky', top: '0', zIndex: '10', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '24px', background: 'rgba(255,255,255,.6)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', borderBottom: '1px solid var(--glass-border)', boxShadow: 'var(--shadow-sm)', padding: '14px 32px' }}>
   <nav className="main-nav" aria-label="Asosiy" style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
-    <a href="#how-it-works" id="nav-how" className="nav-link hv-11" style={{ fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', padding: '8px 12px', borderRadius: 'var(--radius-pill)', textDecoration: 'none' }}>Qanday ishlaydi</a>
-    <a href="#targeting-demo" id="nav-business" className="nav-link hv-11" style={{ fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', padding: '8px 12px', borderRadius: 'var(--radius-pill)', textDecoration: 'none' }}>Biznes uchun</a>
-    <a href="#data-band" id="nav-contact" className="nav-link hv-11" style={{ fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', padding: '8px 12px', borderRadius: 'var(--radius-pill)', textDecoration: 'none' }}>Ma'lumot uchun murojaat</a>
-    <a href="#" id="nav-login" className="nav-link nav-login hv-13" style={{ fontSize: 'var(--text-sm)', fontWeight: '600', color: 'var(--ink)', padding: '8px 18px', borderRadius: 'var(--radius-pill)', border: '1px solid var(--glass-border)', background: 'var(--glass)', boxShadow: 'var(--shadow-sm),var(--glass-inner)', textDecoration: 'none' }}>Kirish</a>
+    <a href="#how-it-works" id="nav-how" className="nav-link" style={{ fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', padding: '8px 12px', borderRadius: 'var(--radius-pill)', textDecoration: 'none' }} style-hover="background:var(--glass);color:var(--ink);text-decoration:none">Qanday ishlaydi</a>
+    <a href="#targeting-demo" id="nav-business" className="nav-link" style={{ fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', padding: '8px 12px', borderRadius: 'var(--radius-pill)', textDecoration: 'none' }} style-hover="background:var(--glass);color:var(--ink);text-decoration:none">Biznes uchun</a>
+    <a href="#data-band" id="nav-contact" className="nav-link" style={{ fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', padding: '8px 12px', borderRadius: 'var(--radius-pill)', textDecoration: 'none' }} style-hover="background:var(--glass);color:var(--ink);text-decoration:none">Ma'lumot uchun murojaat</a>
+    <a href="#" id="nav-login" className="nav-link nav-login" style={{ fontSize: 'var(--text-sm)', fontWeight: '600', color: 'var(--ink)', padding: '8px 18px', borderRadius: 'var(--radius-pill)', border: '1px solid var(--glass-border)', background: 'var(--glass)', boxShadow: 'var(--shadow-sm),var(--glass-inner)', textDecoration: 'none' }} style-hover="background:var(--glass-strong);text-decoration:none">Kirish</a>
   </nav>
 </header>
 
@@ -43,7 +46,7 @@ export default function Landing() {
     <h1 className="hero-slogan" style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(30px,4.5vw,var(--text-3xl))', fontWeight: '800', letterSpacing: '-.02em', lineHeight: '1.1', margin: '0 0 18px', textWrap: 'balance' }}>To'g'ri odamlardan haqiqiy javoblar.</h1>
     <p style={{ fontSize: 'var(--text-md)', color: 'var(--ink-mid)', maxWidth: '560px', margin: '0 auto 36px', textWrap: 'pretty' }}>Fikra biznesni O'zbekiston bo'ylab tekshirilgan respondentlar bilan bog'laydi. So'rovnomani bir necha daqiqada e'lon qiling. Fikringiz uchun pul oling.</p>
     <div className="hero-actions" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: '16px', maxWidth: '720px', margin: '0 auto', textAlign: 'left' }}>
-      <button type="button" id="cta-take" className="cta-panel cta-take hv-16" style={{ fontFamily: 'var(--font-body)', display: 'flex', gap: '16px', alignItems: 'flex-start', textAlign: 'left', background: 'var(--glass)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', border: '1px solid var(--glass-border)', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-glass),var(--glass-inner)', padding: '22px', cursor: 'pointer', transition: 'transform .15s,box-shadow .15s' }}>
+      <button type="button" id="cta-take" className="cta-panel cta-take" style={{ fontFamily: 'var(--font-body)', display: 'flex', gap: '16px', alignItems: 'flex-start', textAlign: 'left', background: 'var(--glass)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', border: '1px solid var(--glass-border)', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-glass),var(--glass-inner)', padding: '22px', cursor: 'pointer', transition: 'transform .15s,box-shadow .15s' }} style-hover="transform:translateY(-3px);box-shadow:var(--shadow-float),var(--glass-inner)">
         <span className="cta-icon" style={{ flex: 'none', width: '46px', height: '46px', borderRadius: '14px', background: 'linear-gradient(180deg,var(--mint-500),var(--mint-600))', border: '1px solid rgba(255,255,255,.55)', boxShadow: 'var(--glow-mint),inset 0 1px 0 rgba(255,255,255,.35)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
           <svg width={22} height={22} viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><path d="M8.5 12.5l2.5 2.5 4.5-5"></path></svg>
         </span>
@@ -53,7 +56,7 @@ export default function Landing() {
           <span style={{ display: 'inline-block', marginTop: '10px', fontSize: 'var(--text-sm)', fontWeight: '600', color: 'var(--mint-600)' }}>Boshlash →</span>
         </span>
       </button>
-      <button type="button" id="cta-create" className="cta-panel cta-create hv-16" style={{ fontFamily: 'var(--font-body)', display: 'flex', gap: '16px', alignItems: 'flex-start', textAlign: 'left', background: 'var(--glass)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', border: '1px solid var(--glass-border)', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-glass),var(--glass-inner)', padding: '22px', cursor: 'pointer', transition: 'transform .15s,box-shadow .15s' }}>
+      <button type="button" id="cta-create" className="cta-panel cta-create" style={{ fontFamily: 'var(--font-body)', display: 'flex', gap: '16px', alignItems: 'flex-start', textAlign: 'left', background: 'var(--glass)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', border: '1px solid var(--glass-border)', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-glass),var(--glass-inner)', padding: '22px', cursor: 'pointer', transition: 'transform .15s,box-shadow .15s' }} style-hover="transform:translateY(-3px);box-shadow:var(--shadow-float),var(--glass-inner)">
         <span className="cta-icon" style={{ flex: 'none', width: '46px', height: '46px', borderRadius: '14px', background: 'linear-gradient(180deg,#2A363C,var(--ink))', border: '1px solid rgba(255,255,255,.35)', boxShadow: '0 6px 16px rgba(27,34,38,.3),inset 0 1px 0 rgba(255,255,255,.18)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
           <svg width={22} height={22} viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><rect x="5" y="12" width={3} height={7} rx="1"></rect><rect x="10.5" y="8" width={3} height={11} rx="1"></rect><rect x="16" y="4" width={3} height={15} rx="1"></rect></svg>
         </span>
@@ -148,58 +151,7 @@ export default function Landing() {
       <div aria-hidden="true" style={{ position: 'absolute', width: '420px', height: '420px', borderRadius: '50%', background: 'radial-gradient(circle,rgba(98,201,163,.4),transparent 70%)', top: '-140px', right: '-80px', filter: 'blur(16px)' }}></div>
       <div aria-hidden="true" style={{ position: 'absolute', width: '340px', height: '340px', borderRadius: '50%', background: 'radial-gradient(circle,rgba(122,170,236,.25),transparent 70%)', bottom: '-120px', left: '-70px', filter: 'blur(18px)' }}></div>
       <div style={{ position: 'relative', padding: '44px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: '40px', alignItems: 'center' }}>
-        <div className="targeting-controls">
-          <p style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', letterSpacing: '.08em', color: 'rgba(127,232,195,.8)', margin: '0 0 10px' }}>JONLI PANEL</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-xl)', fontWeight: '700', letterSpacing: '-.01em', color: '#F2F7F5', margin: '0 0 22px', textWrap: 'balance' }}>Auditoriyangizni tanlang — mos panelistlarni darhol ko'ring</h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            <div className="form-field">
-              <label htmlFor="demo-region" style={{ display: 'block', fontWeight: '600', fontSize: 'var(--text-sm)', color: 'rgba(255,255,255,.75)', marginBottom: '6px' }}>Viloyat</label>
-              <select id="demo-region" data-control="demo-region" style={{ width: '100%', boxSizing: 'border-box', fontFamily: 'var(--font-body)', fontSize: 'var(--text-base)', color: '#F2F7F5', padding: '10px 12px', border: '1px solid rgba(255,255,255,.25)', borderRadius: 'var(--radius-md)', background: 'rgba(255,255,255,.08)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
-                <option value="all" style={{ color: '#1B2226' }}>Barcha viloyatlar</option>
-                <option value="toshkent" style={{ color: '#1B2226' }}>Toshkent</option>
-                <option value="samarqand" style={{ color: '#1B2226' }}>Samarqand</option>
-                <option value="fargona" style={{ color: '#1B2226' }}>Farg'ona</option>
-                <option value="namangan" style={{ color: '#1B2226' }}>Namangan</option>
-                <option value="buxoro" style={{ color: '#1B2226' }}>Buxoro</option>
-              </select>
-            </div>
-            <div className="form-field range-field">
-              <span id="demo-age-label" style={{ display: 'block', fontWeight: '600', fontSize: 'var(--text-sm)', color: 'rgba(255,255,255,.75)', marginBottom: '6px' }}>Yosh oralig'i: <span style={{ color: '#7FE8C3', fontVariantNumeric: 'tabular-nums' }}>{/* BIND: ageMin */}–{/* BIND: ageMax */}</span></span>
-              <div className="range-dual" data-control="demo-age" style={{ position: 'relative', height: '36px', margin: '0 11px' }}>
-                <div className="range-track" style={{ position: 'absolute', top: '16px', left: '0', right: '0', height: '5px', borderRadius: '3px', background: 'rgba(255,255,255,.15)' }}></div>
-                <div className="range-fill" style={{ position: 'absolute', top: '16px', left: '{{ fillLeft }}', width: '{{ fillWidth }}', height: '5px', borderRadius: '3px', background: 'linear-gradient(90deg,var(--mint-500),var(--mint-400))', boxShadow: '0 0 10px rgba(98,201,163,.6)' }}></div>
-                <button type="button" className="range-handle" id="demo-age-min" role="slider" aria-labelledby="demo-age-label" aria-valuemin={16} aria-valuemax={65} style={{ position: 'absolute', top: '7px', left: '{{ minLeft }}', transform: 'translateX(-50%)', width: '22px', height: '22px', borderRadius: '50%', background: 'rgba(255,255,255,.95)', border: '2px solid var(--mint-400)', boxShadow: '0 0 12px rgba(98,201,163,.5)', cursor: 'grab', padding: '0' }}></button>
-                <button type="button" className="range-handle" id="demo-age-max" role="slider" aria-labelledby="demo-age-label" aria-valuemin={16} aria-valuemax={65} style={{ position: 'absolute', top: '7px', left: '{{ maxLeft }}', transform: 'translateX(-50%)', width: '22px', height: '22px', borderRadius: '50%', background: 'rgba(255,255,255,.95)', border: '2px solid var(--mint-400)', boxShadow: '0 0 12px rgba(98,201,163,.5)', cursor: 'grab', padding: '0' }}></button>
-              </div>
-            </div>
-            <div className="form-field">
-              <label htmlFor="demo-interest" style={{ display: 'block', fontWeight: '600', fontSize: 'var(--text-sm)', color: 'rgba(255,255,255,.75)', marginBottom: '6px' }}>Qiziqish sohasi</label>
-              <select id="demo-interest" data-control="demo-interest" style={{ width: '100%', boxSizing: 'border-box', fontFamily: 'var(--font-body)', fontSize: 'var(--text-base)', color: '#F2F7F5', padding: '10px 12px', border: '1px solid rgba(255,255,255,.25)', borderRadius: 'var(--radius-md)', background: 'rgba(255,255,255,.08)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
-                <option value="all" style={{ color: '#1B2226' }}>Barcha sohalar</option>
-                <option value="fintech" style={{ color: '#1B2226' }}>Bank va moliya ilovalari</option>
-                <option value="delivery" style={{ color: '#1B2226' }}>Yetkazib berish xizmatlari</option>
-                <option value="edu" style={{ color: '#1B2226' }}>Ta'lim va kurslar</option>
-                <option value="health" style={{ color: '#1B2226' }}>Sog'liq va sport</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div className="targeting-result" style={{ background: 'rgba(255,255,255,.07)', backdropFilter: 'blur(18px)', WebkitBackdropFilter: 'blur(18px)', border: '1px solid rgba(255,255,255,.14)', borderTopColor: 'rgba(255,255,255,.3)', borderRadius: 'var(--radius-lg)', padding: '28px', boxShadow: '0 20px 50px rgba(0,0,0,.35)' }}>
-          <div className="match-count" data-element="match-count" aria-live="polite">
-            <span style={{ display: 'block', fontFamily: 'var(--font-display)', fontSize: 'clamp(44px,5vw,64px)', fontWeight: '800', letterSpacing: '-.02em', lineHeight: '1', color: '#7FE8C3', textShadow: '0 0 28px rgba(98,201,163,.5)', fontVariantNumeric: 'tabular-nums' }}>{/* BIND: matchCount */}</span>
-            <span style={{ display: 'block', fontSize: 'var(--text-md)', color: 'rgba(255,255,255,.75)', marginTop: '8px' }}>ta panelist mos keladi</span>
-          </div>
-          <div className="region-breakdown" style={{ marginTop: '24px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            {/* SC-FOR: sc-for */}
-              <div className="region-bar" style={{ display: 'grid', gridTemplateColumns: '82px 1fr 40px', alignItems: 'center', gap: '10px' }}>
-                <span style={{ fontSize: 'var(--text-xs)', color: 'rgba(255,255,255,.65)' }}>{/* BIND: bar.name */}</span>
-                <div style={{ height: '8px', borderRadius: '4px', background: 'rgba(255,255,255,.1)', overflow: 'hidden' }}><div style={{ width: '{{ bar.pct }}', height: '100%', borderRadius: '4px', background: 'linear-gradient(90deg,var(--mint-500),var(--mint-400))', opacity: '{{ bar.opacity }}', boxShadow: '0 0 8px rgba(98,201,163,.4)' }}></div></div>
-                <span style={{ fontSize: 'var(--text-xs)', color: 'rgba(255,255,255,.65)', textAlign: 'right', fontVariantNumeric: 'tabular-nums' }}>{/* BIND: bar.count */}</span>
-              </div>
-            
-          </div>
-          <p style={{ margin: '20px 0 0', fontSize: 'var(--text-xs)', color: 'rgba(255,255,255,.45)' }}>Raqam profil ma'lumotlari asosida jonli hisoblanadi</p>
-        </div>
+        <TargetingWidget />
       </div>
     </div>
   </section>
@@ -211,7 +163,7 @@ export default function Landing() {
         <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-xl)', fontWeight: '700', letterSpacing: '-.01em', margin: '0 0 8px' }}>Tadqiqot o'tkazmasdan ma'lumot kerakmi?</h2>
         <p style={{ margin: '0', fontSize: 'var(--text-base)', color: 'var(--ink-mid)' }}>Panel bo'yicha tayyor kesimlar va maxsus hisobotlar uchun biz bilan bog'laning.</p>
       </div>
-      <button type="button" id="cta-data" className="btn btn-primary hv-2" style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-base)', padding: '12px 24px', borderRadius: 'var(--radius-md)', border: '1px solid rgba(255,255,255,.6)', background: 'linear-gradient(180deg,var(--mint-500),var(--mint-600))', color: '#fff', cursor: 'pointer', boxShadow: 'var(--glow-mint),inset 0 1px 0 rgba(255,255,255,.35)', transition: 'filter .12s' }}>Ma'lumot uchun murojaat</button>
+      <button type="button" id="cta-data" className="btn btn-primary" style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-base)', padding: '12px 24px', borderRadius: 'var(--radius-md)', border: '1px solid rgba(255,255,255,.6)', background: 'linear-gradient(180deg,var(--mint-500),var(--mint-600))', color: '#fff', cursor: 'pointer', boxShadow: 'var(--glow-mint),inset 0 1px 0 rgba(255,255,255,.35)', transition: 'filter .12s' }} style-hover="filter:brightness(1.08)">Ma'lumot uchun murojaat</button>
     </div>
   </section>
 </main>
@@ -226,24 +178,24 @@ export default function Landing() {
       <nav className="footer-col" aria-label="Mahsulot">
         <h3 style={{ fontSize: 'var(--text-xs)', fontWeight: '600', letterSpacing: '.06em', color: 'var(--ink-soft)', margin: '0 0 12px' }}>MAHSULOT</h3>
         <ul style={{ listStyle: 'none', margin: '0', padding: '0', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <li><a href="#targeting-demo" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} className="hv-14">So'rovnoma yaratish</a></li>
-          <li><a href="#how-it-works" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} className="hv-14">Respondent bo'lish</a></li>
-          <li><a href="#data-band" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} className="hv-14">Tayyor ma'lumotlar</a></li>
+          <li><a href="#targeting-demo" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} style-hover="color:var(--mint-700)">So'rovnoma yaratish</a></li>
+          <li><a href="#how-it-works" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} style-hover="color:var(--mint-700)">Respondent bo'lish</a></li>
+          <li><a href="#data-band" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} style-hover="color:var(--mint-700)">Tayyor ma'lumotlar</a></li>
         </ul>
       </nav>
       <nav className="footer-col" aria-label="Kompaniya">
         <h3 style={{ fontSize: 'var(--text-xs)', fontWeight: '600', letterSpacing: '.06em', color: 'var(--ink-soft)', margin: '0 0 12px' }}>KOMPANIYA</h3>
         <ul style={{ listStyle: 'none', margin: '0', padding: '0', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <li><a href="#" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} className="hv-14">Biz haqimizda</a></li>
-          <li><a href="#" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} className="hv-14">Panel sifati</a></li>
-          <li><a href="#" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} className="hv-14">Maxfiylik siyosati</a></li>
+          <li><a href="#" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} style-hover="color:var(--mint-700)">Biz haqimizda</a></li>
+          <li><a href="#" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} style-hover="color:var(--mint-700)">Panel sifati</a></li>
+          <li><a href="#" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} style-hover="color:var(--mint-700)">Maxfiylik siyosati</a></li>
         </ul>
       </nav>
       <nav className="footer-col" aria-label="Aloqa">
         <h3 style={{ fontSize: 'var(--text-xs)', fontWeight: '600', letterSpacing: '.06em', color: 'var(--ink-soft)', margin: '0 0 12px' }}>ALOQA</h3>
         <ul style={{ listStyle: 'none', margin: '0', padding: '0', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <li><a href="mailto:salom@fikra.uz" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} className="hv-14">salom@fikra.uz</a></li>
-          <li><a href="tel:+998712005050" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} className="hv-14">+998 71 200 50 50</a></li>
+          <li><a href="mailto:salom@fikra.uz" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} style-hover="color:var(--mint-700)">salom@fikra.uz</a></li>
+          <li><a href="tel:+998712005050" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} style-hover="color:var(--mint-700)">+998 71 200 50 50</a></li>
           <li><span style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }}>Toshkent, Amir Temur 107B</span></li>
         </ul>
       </nav>

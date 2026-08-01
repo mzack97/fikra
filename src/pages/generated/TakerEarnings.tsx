@@ -16,19 +16,19 @@ export default function TakerEarnings() {
   <aside className="app-sidebar" style={{ flexDirection: 'column', gap: '8px', background: 'rgba(255,255,255,.5)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', borderRight: '1px solid var(--glass-border)', padding: '24px 16px', position: 'sticky', top: '0', height: '100vh', boxSizing: 'border-box' }}>
     <a href="landing.dc.html" id="side-logo" style={{ display: 'block', padding: '0 8px', marginBottom: '24px' }}><img className="app-logo" src="/logo-full.png" alt="Fikra" style={{ height: '26px', display: 'block' }} /></a>
     <nav className="side-nav" aria-label="Asosiy" style={{ display: 'flex', flexDirection: 'column', gap: '4px', flex: '1' }}>
-      <a href="taker-dashboard.dc.html" id="side-home" className="side-link" style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '11px 12px', borderRadius: 'var(--radius-md)', fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', border: '1px solid transparent' }} style-hover="background:var(--glass);color:var(--ink)">
+      <a href="taker-dashboard.dc.html" id="side-home" className="side-link hv-10" style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '11px 12px', borderRadius: 'var(--radius-md)', fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', border: '1px solid transparent' }}>
         <svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7v9a1 1 0 01-1 1h-4v-6h-6v6H5a1 1 0 01-1-1z"></path></svg>
         Bosh sahifa</a>
-      <a href="taker-surveys.dc.html" id="side-surveys" className="side-link" style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '11px 12px', borderRadius: 'var(--radius-md)', fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', border: '1px solid transparent' }} style-hover="background:var(--glass);color:var(--ink)">
+      <a href="taker-surveys.dc.html" id="side-surveys" className="side-link hv-10" style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '11px 12px', borderRadius: 'var(--radius-md)', fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', border: '1px solid transparent' }}>
         <svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="5" y="3" width={14} height={18} rx="3"></rect><path d="M9 8h6M9 12h6M9 16h4"></path></svg>
         So'rovnomalar</a>
-      <a href="#" id="side-profile" className="side-link" style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '11px 12px', borderRadius: 'var(--radius-md)', fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', border: '1px solid transparent' }} style-hover="background:var(--glass);color:var(--ink)">
+      <a href="#" id="side-profile" className="side-link hv-10" style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '11px 12px', borderRadius: 'var(--radius-md)', fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', border: '1px solid transparent' }}>
         <svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 20c1.5-4 5-5 8-5s6.5 1 8 5"></path></svg>
         Mening profilim</a>
       <a href="#" id="side-earnings" className="side-link is-active" aria-current="page" style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '11px 12px', borderRadius: 'var(--radius-md)', fontSize: 'var(--text-sm)', fontWeight: '600', color: 'var(--mint-700)', background: 'var(--mint-glass)', border: '1px solid var(--mint-glass-border)' }}>
         <svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v10M9.5 9.5c0-1 1-1.7 2.5-1.7s2.5.7 2.5 1.7-1 1.4-2.5 1.7-2.5.7-2.5 1.7 1 1.7 2.5 1.7 2.5-.7 2.5-1.7"></path></svg>
         Daromad</a>
-      <a href="#" id="side-settings" className="side-link" style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '11px 12px', borderRadius: 'var(--radius-md)', fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', border: '1px solid transparent' }} style-hover="background:var(--glass);color:var(--ink)">
+      <a href="#" id="side-settings" className="side-link hv-10" style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '11px 12px', borderRadius: 'var(--radius-md)', fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', border: '1px solid transparent' }}>
         <svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19 12a7 7 0 00-.1-1.2l2-1.6-2-3.4-2.4 1a7 7 0 00-2-1.2L14 3h-4l-.5 2.6a7 7 0 00-2 1.2l-2.4-1-2 3.4 2 1.6A7 7 0 005 12a7 7 0 00.1 1.2l-2 1.6 2 3.4 2.4-1a7 7 0 002 1.2L10 21h4l.5-2.6a7 7 0 002-1.2l2.4 1 2-3.4-2-1.6A7 7 0 0019 12z"></path></svg>
         Sozlamalar</a>
     </nav>
@@ -44,7 +44,7 @@ export default function TakerEarnings() {
   <main className="app-content" style={{ padding: '36px 32px 64px', minWidth: '0', boxSizing: 'border-box' }}>
     <div className="page-head" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px', flexWrap: 'wrap', marginBottom: '24px' }}>
       <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-2xl)', fontWeight: '700', letterSpacing: '-.01em', margin: '0' }}>Daromad</h1>
-      <button type="button" id="btn-withdraw" className="btn btn-primary" style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-base)', padding: '11px 22px', borderRadius: 'var(--radius-md)', border: '1px solid rgba(255,255,255,.6)', background: 'linear-gradient(180deg,var(--mint-500),var(--mint-600))', color: '#fff', cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: '8px', boxShadow: 'var(--glow-mint),inset 0 1px 0 rgba(255,255,255,.35)', transition: 'filter .12s' }} style-hover="filter:brightness(1.08)">
+      <button type="button" id="btn-withdraw" className="btn btn-primary hv-2" style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-base)', padding: '11px 22px', borderRadius: 'var(--radius-md)', border: '1px solid rgba(255,255,255,.6)', background: 'linear-gradient(180deg,var(--mint-500),var(--mint-600))', color: '#fff', cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: '8px', boxShadow: 'var(--glow-mint),inset 0 1px 0 rgba(255,255,255,.35)', transition: 'filter .12s' }}>
         <svg width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 19V5M7 10l5-5 5 5"></path></svg>
         Yechib olish</button>
     </div>
@@ -92,78 +92,7 @@ export default function TakerEarnings() {
     </section>
 
     
-    <section className="modal-states" data-screen-label="Yechib olish oynasi" style={{ maxWidth: '760px' }}>
-      <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-lg)', fontWeight: '700', margin: '0 0 6px' }}>Yechib olish oynasi</h2>
-      <p style={{ margin: '0 0 18px', fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }}>Ochiq holat va bloklangan holat (balans yetarli emas).</p>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(320px,1fr))', gap: '20px', alignItems: 'start' }}>
-
-        <div className="modal-demo" style={{ position: 'relative', border: '1px solid var(--glass-border)', borderRadius: 'var(--radius-lg)', padding: '28px 20px', display: 'flex', justifyContent: 'center', overflow: 'hidden', background: 'linear-gradient(140deg,var(--bg-a),var(--bg-b))' }}>
-          <div aria-hidden="true" style={{ position: 'absolute', width: '180px', height: '180px', borderRadius: '50%', background: 'radial-gradient(circle,rgba(98,201,163,.45),transparent 70%)', top: '-50px', left: '-40px', filter: 'blur(14px)' }}></div>
-          <div className="modal withdraw-modal" role="dialog" aria-labelledby="withdraw-title" style={{ position: 'relative', background: 'var(--glass-strong)', backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)', border: '1px solid var(--glass-border)', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-float),var(--glass-inner)', maxWidth: '360px', width: '100%', padding: '24px' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '12px', marginBottom: '6px' }}>
-              <h3 id="withdraw-title" style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-lg)', fontWeight: '700', margin: '0' }}>Yechib olish</h3>
-              <button type="button" className="modal-close" data-action="withdraw-close" style={{ background: 'rgba(255,255,255,.5)', border: '1px solid var(--glass-border)', borderRadius: '50%', width: '28px', height: '28px', color: 'var(--ink-mid)', fontSize: '14px', cursor: 'pointer', padding: '0', lineHeight: '1' }}>✕</button>
-            </div>
-            <p style={{ margin: '0 0 18px', fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }}>Mavjud: <span style={{ fontWeight: '700', color: 'var(--mint-700)', fontVariantNumeric: 'tabular-nums' }}>34 500 so'm</span></p>
-            <div className="form-field" style={{ marginBottom: '14px' }}>
-              <label htmlFor="withdraw-amount" style={{ display: 'block', fontWeight: '600', fontSize: 'var(--text-sm)', marginBottom: '6px' }}>Summa</label>
-              <div style={{ display: 'flex', alignItems: 'stretch', border: '1px solid var(--line-strong)', borderRadius: 'var(--radius-md)', background: 'rgba(255,255,255,.55)', boxShadow: 'inset 0 1px 2px rgba(27,60,50,.05)', overflow: 'hidden' }}>
-                <input id="withdraw-amount" type="text" inputMode="numeric" defaultValue="30 000" style={{ flex: '1', minWidth: '0', fontFamily: 'var(--font-body)', fontSize: 'var(--text-md)', fontWeight: '600', color: 'var(--ink)', padding: '11px 12px', border: '0', background: 'transparent', fontVariantNumeric: 'tabular-nums', outlineOffset: '-2px' }} />
-                <span style={{ display: 'flex', alignItems: 'center', padding: '0 12px', background: 'rgba(255,255,255,.55)', borderLeft: '1px solid var(--line)', fontWeight: '600', color: 'var(--ink-mid)', fontSize: 'var(--text-sm)' }}>so'm</span>
-              </div>
-              <p className="field-help" style={{ margin: '6px 0 0', fontSize: 'var(--text-xs)', color: 'var(--ink-mid)' }}>Eng kam yechish summasi: 20 000 so'm</p>
-            </div>
-            <fieldset className="method-select" style={{ border: '0', padding: '0', margin: '0 0 14px' }}>
-              <legend style={{ fontWeight: '600', fontSize: 'var(--text-sm)', marginBottom: '8px', padding: '0' }}>Usul</legend>
-              <div style={{ display: 'flex', gap: '8px' }}>
-                <label className="method-option is-selected" data-method="card" style={{ flex: '1', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '10px 12px', borderRadius: 'var(--radius-md)', border: '1px solid var(--mint-glass-border)', background: 'var(--mint-glass)', fontSize: 'var(--text-sm)', fontWeight: '600', color: 'var(--mint-700)', cursor: 'pointer', minHeight: '42px', boxSizing: 'border-box' }}>
-                  <input type="radio" name="withdraw-method" id="method-card" checked style={{ width: '15px', height: '15px', accentColor: 'var(--mint-600)', margin: '0' }} />Karta</label>
-                <label className="method-option" data-method="mobile" style={{ flex: '1', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '10px 12px', borderRadius: 'var(--radius-md)', border: '1px solid var(--line)', background: 'rgba(255,255,255,.4)', fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', cursor: 'pointer', minHeight: '42px', boxSizing: 'border-box' }}>
-                  <input type="radio" name="withdraw-method" id="method-mobile" style={{ width: '15px', height: '15px', accentColor: 'var(--mint-600)', margin: '0' }} />Mobil balans</label>
-              </div>
-            </fieldset>
-            <div className="form-field" style={{ marginBottom: '20px' }}>
-              <label htmlFor="withdraw-card" style={{ display: 'block', fontWeight: '600', fontSize: 'var(--text-sm)', marginBottom: '6px' }}>Karta raqami</label>
-              <input id="withdraw-card" type="text" inputMode="numeric" defaultValue="8600 12•• •••• 3456" style={{ width: '100%', boxSizing: 'border-box', fontFamily: 'var(--font-body)', fontSize: 'var(--text-base)', color: 'var(--ink)', padding: '10px 12px', border: '1px solid var(--line-strong)', borderRadius: 'var(--radius-md)', background: 'rgba(255,255,255,.55)', boxShadow: 'inset 0 1px 2px rgba(27,60,50,.05)', fontVariantNumeric: 'tabular-nums', letterSpacing: '.04em' }} />
-            </div>
-            <button type="button" id="btn-withdraw-confirm" className="btn btn-primary" style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-md)', padding: '13px 20px', borderRadius: 'var(--radius-md)', border: '1px solid rgba(255,255,255,.6)', background: 'linear-gradient(180deg,var(--mint-500),var(--mint-600))', color: '#fff', cursor: 'pointer', width: '100%', boxShadow: 'var(--glow-mint),inset 0 1px 0 rgba(255,255,255,.35)', transition: 'filter .12s' }} style-hover="filter:brightness(1.08)">Tasdiqlash</button>
-          </div>
-        </div>
-
-        <div className="modal-demo is-blocked" style={{ position: 'relative', border: '1px solid var(--glass-border)', borderRadius: 'var(--radius-lg)', padding: '28px 20px', display: 'flex', justifyContent: 'center', overflow: 'hidden', background: 'linear-gradient(140deg,var(--bg-a),var(--bg-b))' }}>
-          <div aria-hidden="true" style={{ position: 'absolute', width: '180px', height: '180px', borderRadius: '50%', background: 'radial-gradient(circle,rgba(204,66,87,.25),transparent 70%)', top: '-50px', right: '-40px', filter: 'blur(14px)' }}></div>
-          <div className="modal withdraw-modal" role="dialog" aria-labelledby="withdraw-blocked-title" style={{ position: 'relative', background: 'var(--glass-strong)', backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)', border: '1px solid var(--glass-border)', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-float),var(--glass-inner)', maxWidth: '360px', width: '100%', padding: '24px' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '12px', marginBottom: '6px' }}>
-              <h3 id="withdraw-blocked-title" style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-lg)', fontWeight: '700', margin: '0' }}>Yechib olish</h3>
-              <button type="button" className="modal-close" data-action="withdraw-blocked-close" style={{ background: 'rgba(255,255,255,.5)', border: '1px solid var(--glass-border)', borderRadius: '50%', width: '28px', height: '28px', color: 'var(--ink-mid)', fontSize: '14px', cursor: 'pointer', padding: '0', lineHeight: '1' }}>✕</button>
-            </div>
-            <p style={{ margin: '0 0 18px', fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }}>Mavjud: <span style={{ fontWeight: '700', color: 'var(--ink)', fontVariantNumeric: 'tabular-nums' }}>12 400 so'm</span></p>
-            <div className="form-field has-error" style={{ marginBottom: '14px' }}>
-              <label htmlFor="withdraw-amount-blocked" style={{ display: 'block', fontWeight: '600', fontSize: 'var(--text-sm)', marginBottom: '6px' }}>Summa</label>
-              <div style={{ display: 'flex', alignItems: 'stretch', border: '1px solid var(--danger)', borderRadius: 'var(--radius-md)', background: 'rgba(255,255,255,.55)', boxShadow: '0 0 0 3px var(--danger-glass)', overflow: 'hidden' }}>
-                <input id="withdraw-amount-blocked" type="text" inputMode="numeric" defaultValue="12 400" aria-invalid="true" aria-describedby="withdraw-blocked-error" style={{ flex: '1', minWidth: '0', fontFamily: 'var(--font-body)', fontSize: 'var(--text-md)', fontWeight: '600', color: 'var(--ink)', padding: '11px 12px', border: '0', background: 'transparent', fontVariantNumeric: 'tabular-nums', outlineOffset: '-2px' }} />
-                <span style={{ display: 'flex', alignItems: 'center', padding: '0 12px', background: 'rgba(255,255,255,.55)', borderLeft: '1px solid var(--line)', fontWeight: '600', color: 'var(--ink-mid)', fontSize: 'var(--text-sm)' }}>so'm</span>
-              </div>
-              <p className="field-error" id="withdraw-blocked-error" style={{ margin: '6px 0 0', fontSize: 'var(--text-xs)', color: 'var(--danger)', fontWeight: '500' }}>Eng kam yechish summasi 20 000 so'm. Sizda 12 400 so'm bor.</p>
-            </div>
-            <fieldset className="method-select" style={{ border: '0', padding: '0', margin: '0 0 14px' }}>
-              <legend style={{ fontWeight: '600', fontSize: 'var(--text-sm)', marginBottom: '8px', padding: '0' }}>Usul</legend>
-              <div style={{ display: 'flex', gap: '8px' }}>
-                <label className="method-option is-selected" data-method="card-blocked" style={{ flex: '1', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '10px 12px', borderRadius: 'var(--radius-md)', border: '1px solid var(--mint-glass-border)', background: 'var(--mint-glass)', fontSize: 'var(--text-sm)', fontWeight: '600', color: 'var(--mint-700)', cursor: 'pointer', minHeight: '42px', boxSizing: 'border-box' }}>
-                  <input type="radio" name="withdraw-method-blocked" id="method-card-blocked" checked style={{ width: '15px', height: '15px', accentColor: 'var(--mint-600)', margin: '0' }} />Karta</label>
-                <label className="method-option" data-method="mobile-blocked" style={{ flex: '1', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '10px 12px', borderRadius: 'var(--radius-md)', border: '1px solid var(--line)', background: 'rgba(255,255,255,.4)', fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', cursor: 'pointer', minHeight: '42px', boxSizing: 'border-box' }}>
-                  <input type="radio" name="withdraw-method-blocked" id="method-mobile-blocked" style={{ width: '15px', height: '15px', accentColor: 'var(--mint-600)', margin: '0' }} />Mobil balans</label>
-              </div>
-            </fieldset>
-            <div className="form-field" style={{ marginBottom: '20px' }}>
-              <label htmlFor="withdraw-card-blocked" style={{ display: 'block', fontWeight: '600', fontSize: 'var(--text-sm)', marginBottom: '6px' }}>Karta raqami</label>
-              <input id="withdraw-card-blocked" type="text" inputMode="numeric" defaultValue="8600 12•• •••• 3456" style={{ width: '100%', boxSizing: 'border-box', fontFamily: 'var(--font-body)', fontSize: 'var(--text-base)', color: 'var(--ink)', padding: '10px 12px', border: '1px solid var(--line-strong)', borderRadius: 'var(--radius-md)', background: 'rgba(255,255,255,.55)', boxShadow: 'inset 0 1px 2px rgba(27,60,50,.05)', fontVariantNumeric: 'tabular-nums', letterSpacing: '.04em' }} />
-            </div>
-            <button type="button" id="btn-withdraw-confirm-blocked" className="btn btn-primary" disabled style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-md)', padding: '13px 20px', borderRadius: 'var(--radius-md)', border: '1px solid var(--line)', background: 'var(--glass-soft)', color: 'var(--ink-soft)', cursor: 'not-allowed', width: '100%' }}>Tasdiqlash</button>
-          </div>
-        </div>
-      </div>
-    </section>
+    
   </main>
 </div>
 

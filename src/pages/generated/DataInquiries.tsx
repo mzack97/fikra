@@ -14,10 +14,10 @@ export default function DataInquiries() {
 
 <header className="app-header" style={{ position: 'sticky', top: '0', zIndex: '10', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '24px', background: 'rgba(255,255,255,.6)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', borderBottom: '1px solid var(--glass-border)', boxShadow: 'var(--shadow-sm)', padding: '14px 32px' }}>
   <nav className="main-nav" aria-label="Asosiy" style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
-    <a href="landing.dc.html#how-it-works" id="nav-how" className="nav-link" style={{ fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', padding: '8px 12px', borderRadius: 'var(--radius-pill)', textDecoration: 'none' }} style-hover="background:var(--glass);color:var(--ink);text-decoration:none">Qanday ishlaydi</a>
-    <a href="landing.dc.html#targeting-demo" id="nav-business" className="nav-link" style={{ fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', padding: '8px 12px', borderRadius: 'var(--radius-pill)', textDecoration: 'none' }} style-hover="background:var(--glass);color:var(--ink);text-decoration:none">Biznes uchun</a>
-    <a href="#inquiry-form" id="nav-contact" className="nav-link is-active" aria-current="page" style={{ fontSize: 'var(--text-sm)', fontWeight: '600', color: 'var(--mint-700)', padding: '8px 12px', borderRadius: 'var(--radius-pill)', background: 'var(--mint-glass)', border: '1px solid var(--mint-glass-border)', textDecoration: 'none' }} style-hover="text-decoration:none">Ma'lumot uchun murojaat</a>
-    <a href="#" id="nav-login" className="nav-link nav-login" style={{ fontSize: 'var(--text-sm)', fontWeight: '600', color: 'var(--ink)', padding: '8px 18px', borderRadius: 'var(--radius-pill)', border: '1px solid var(--glass-border)', background: 'var(--glass)', boxShadow: 'var(--shadow-sm),var(--glass-inner)', textDecoration: 'none' }} style-hover="background:var(--glass-strong);text-decoration:none">Kirish</a>
+    <a href="landing.dc.html#how-it-works" id="nav-how" className="nav-link hv-11" style={{ fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', padding: '8px 12px', borderRadius: 'var(--radius-pill)', textDecoration: 'none' }}>Qanday ishlaydi</a>
+    <a href="landing.dc.html#targeting-demo" id="nav-business" className="nav-link hv-11" style={{ fontSize: 'var(--text-sm)', fontWeight: '500', color: 'var(--ink-mid)', padding: '8px 12px', borderRadius: 'var(--radius-pill)', textDecoration: 'none' }}>Biznes uchun</a>
+    <a href="#inquiry-form" id="nav-contact" className="nav-link is-active hv-12" aria-current="page" style={{ fontSize: 'var(--text-sm)', fontWeight: '600', color: 'var(--mint-700)', padding: '8px 12px', borderRadius: 'var(--radius-pill)', background: 'var(--mint-glass)', border: '1px solid var(--mint-glass-border)', textDecoration: 'none' }}>Ma'lumot uchun murojaat</a>
+    <a href="#" id="nav-login" className="nav-link nav-login hv-13" style={{ fontSize: 'var(--text-sm)', fontWeight: '600', color: 'var(--ink)', padding: '8px 18px', borderRadius: 'var(--radius-pill)', border: '1px solid var(--glass-border)', background: 'var(--glass)', boxShadow: 'var(--shadow-sm),var(--glass-inner)', textDecoration: 'none' }}>Kirish</a>
   </nav>
 </header>
 
@@ -95,7 +95,7 @@ export default function DataInquiries() {
           <textarea id="inq-purpose" rows={4} placeholder="Qaysi savolga javob izlayapsiz? Qaysi auditoriya qiziqtiradi?" style={{ width: '100%', boxSizing: 'border-box', fontFamily: 'var(--font-body)', fontSize: 'var(--text-base)', color: 'var(--ink)', padding: '10px 12px', border: '1px solid var(--line-strong)', borderRadius: 'var(--radius-md)', background: 'rgba(255,255,255,.5)', resize: 'vertical', boxShadow: 'inset 0 1px 2px rgba(27,60,50,.05)' }}></textarea>
           <p className="field-help" style={{ margin: '6px 0 0', fontSize: 'var(--text-xs)', color: 'var(--ink-mid)' }}>Qisqacha yozsangiz ham bo'ladi — tafsilotlarni birga aniqlaymiz</p>
         </div>
-        <button type="button" id="btn-submit-inquiry" className="btn btn-primary" style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-md)', padding: '13px 20px', borderRadius: 'var(--radius-md)', border: '1px solid rgba(255,255,255,.6)', background: 'linear-gradient(180deg,var(--mint-500),var(--mint-600))', color: '#fff', cursor: 'pointer', width: '100%', boxShadow: 'var(--glow-mint),inset 0 1px 0 rgba(255,255,255,.35)', transition: 'filter .12s' }} style-hover="filter:brightness(1.08)">Murojaat yuborish</button>
+        <button type="button" id="btn-submit-inquiry" className="btn btn-primary hv-2" style={{ fontFamily: 'var(--font-body)', fontWeight: '600', fontSize: 'var(--text-md)', padding: '13px 20px', borderRadius: 'var(--radius-md)', border: '1px solid rgba(255,255,255,.6)', background: 'linear-gradient(180deg,var(--mint-500),var(--mint-600))', color: '#fff', cursor: 'pointer', width: '100%', boxShadow: 'var(--glow-mint),inset 0 1px 0 rgba(255,255,255,.35)', transition: 'filter .12s' }}>Murojaat yuborish</button>
       </div>
     </div>
 
@@ -121,24 +121,24 @@ export default function DataInquiries() {
       <nav className="footer-col" aria-label="Mahsulot">
         <h3 style={{ fontSize: 'var(--text-xs)', fontWeight: '600', letterSpacing: '.06em', color: 'var(--ink-soft)', margin: '0 0 12px' }}>MAHSULOT</h3>
         <ul style={{ listStyle: 'none', margin: '0', padding: '0', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <li><a href="landing.dc.html#targeting-demo" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} style-hover="color:var(--mint-700)">So'rovnoma yaratish</a></li>
-          <li><a href="landing.dc.html#how-it-works" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} style-hover="color:var(--mint-700)">Respondent bo'lish</a></li>
-          <li><a href="#inquiry-form" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} style-hover="color:var(--mint-700)">Tayyor ma'lumotlar</a></li>
+          <li><a href="landing.dc.html#targeting-demo" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} className="hv-14">So'rovnoma yaratish</a></li>
+          <li><a href="landing.dc.html#how-it-works" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} className="hv-14">Respondent bo'lish</a></li>
+          <li><a href="#inquiry-form" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} className="hv-14">Tayyor ma'lumotlar</a></li>
         </ul>
       </nav>
       <nav className="footer-col" aria-label="Kompaniya">
         <h3 style={{ fontSize: 'var(--text-xs)', fontWeight: '600', letterSpacing: '.06em', color: 'var(--ink-soft)', margin: '0 0 12px' }}>KOMPANIYA</h3>
         <ul style={{ listStyle: 'none', margin: '0', padding: '0', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <li><a href="#" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} style-hover="color:var(--mint-700)">Biz haqimizda</a></li>
-          <li><a href="#" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} style-hover="color:var(--mint-700)">Panel sifati</a></li>
-          <li><a href="#" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} style-hover="color:var(--mint-700)">Maxfiylik siyosati</a></li>
+          <li><a href="#" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} className="hv-14">Biz haqimizda</a></li>
+          <li><a href="#" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} className="hv-14">Panel sifati</a></li>
+          <li><a href="#" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} className="hv-14">Maxfiylik siyosati</a></li>
         </ul>
       </nav>
       <nav className="footer-col" aria-label="Aloqa">
         <h3 style={{ fontSize: 'var(--text-xs)', fontWeight: '600', letterSpacing: '.06em', color: 'var(--ink-soft)', margin: '0 0 12px' }}>ALOQA</h3>
         <ul style={{ listStyle: 'none', margin: '0', padding: '0', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <li><a href="mailto:salom@fikra.uz" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} style-hover="color:var(--mint-700)">salom@fikra.uz</a></li>
-          <li><a href="tel:+998712005050" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} style-hover="color:var(--mint-700)">+998 71 200 50 50</a></li>
+          <li><a href="mailto:salom@fikra.uz" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} className="hv-14">salom@fikra.uz</a></li>
+          <li><a href="tel:+998712005050" style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }} className="hv-14">+998 71 200 50 50</a></li>
           <li><span style={{ fontSize: 'var(--text-sm)', color: 'var(--ink-mid)' }}>Toshkent, Amir Temur 107B</span></li>
         </ul>
       </nav>

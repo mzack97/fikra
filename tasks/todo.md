@@ -28,7 +28,29 @@
       (registration steps, survey flow states) are reference layouts. Each
       becomes one live screen with real state, not a scrolling list.
 
-## Milestone 1 — Data layer  ← NEXT
+## Milestone 1 — Data layer  ✅ MOSTLY DONE
+- [x] `data/quizzes.ts` — 9 quizzes, 60 questions, 38 targetable dimensions
+- [x] `seed/panel.ts` — 2 000 deterministic panelists with correlations held
+- [x] `lib/targeting.ts` — match engine, status thresholds, region/age breakdown
+- [x] Verified: zero impossible people (was 16 under-22 directors before the fix)
+- [x] Verified: distributions land on target (Tashkent 19.4% vs 19.0% target)
+- [x] Landing targeting widget wired — the JONLI PANEL number is now computed
+- [ ] `api/client.ts` — versioned store, latency, error simulation
+- [ ] `data/surveys.ts` — the 18-study pool
+- [ ] Seeded responses for the analytics screen
+
+## Milestone 1c — Navigation + hover recovery  ✅ DONE
+- [x] Discovered the design's `style-hover` attribute: 150 declarations, 19
+      unique, silently discarded by the first converter. Now extracted into
+      `styles/hover.generated.css` — the designer's exact intent, not my guess
+- [x] `components/NavigationLayer.tsx` — delegated click routing keyed on the
+      design's stable element ids, so all 14 screens are clickable without
+      hand-editing machine-generated files
+- [x] Verified: every navigation target resolves to a real route (0 dead links)
+- [ ] Delete each NavigationLayer entry as its page graduates and gets real
+      handlers. Anything still listed there is an unwired screen.
+
+## Milestone 1b — remaining
 - [ ] `api/client.ts` — versioned store, artificial latency, error simulation
 - [ ] Domain types: User, TakerProfile, Survey, Question, Response, LedgerEntry
 - [ ] Quiz content from the content pack → `data/quizzes.ts` (10 quizzes)
@@ -37,7 +59,18 @@
 - [ ] `api/targeting.ts` — match count over the seeded panel
 - [ ] Verify: match counts move correctly and plausibly across filter changes
 
-## Milestone 2 — Taker loop
+## Milestone 2 — Taker loop  ← IN PROGRESS
+- [x] `api/client.ts` — the single storage boundary, with latency and drafts
+- [x] Taker registration is REAL: 5 separate steps, validation, OTP check,
+      OneID mock, working quiz, progress saved across refresh
+- [x] Fixed: creator registration sent users to the taker dashboard (id clash)
+- [x] Removed the design's specification-reference blocks via the converter
+- [ ] Taker dashboard reads the registered profile
+- [ ] Survey list: real data, working filters, real eligibility
+- [ ] Survey taking flow: one question at a time, timing, quality checks
+- [ ] Earnings and withdrawal
+
+## Milestone 2 — Taker loop (original plan)
 - [ ] Shared shell (sidebar, tabbar, header) extracted from generated pages
 - [ ] Registration wired: steps, fake OTP, fake OneID, persistence across refresh
 - [ ] Quiz engine (reused by registration, profile, and survey-taking)
