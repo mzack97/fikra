@@ -1,0 +1,8 @@
+/* Base element styles + shared keyframes — from the Phase 1 design system. */
+html{background:linear-gradient(140deg,var(--bg-a) 0%,var(--bg-b) 50%,var(--bg-c) 100%) fixed}
+body{margin:0;padding:0;background:transparent;color:var(--ink);font-family:var(--font-body);font-size:var(--text-base);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--mint-600);text-decoration:none}
+a:hover{color:var(--mint-700);text-decoration:underline}
+:focus-visible{outline:2px solid var(--mint-500);outline-offset:2px;border-radius:4px}
+@keyframes fikra-spin{to{transform:rotate(360deg)}}
+@keyframes fikra-shimmer{0%{background-position:150% 0}100%{background-position:-50% 0}}

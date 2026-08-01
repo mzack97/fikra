@@ -1,0 +1,32 @@
+/* Fikra design tokens — lifted verbatim from the Phase 1 design system. Do not hand-edit. */
+:root{
+  /* ===== Fikra tokens v2 — "muz ustidagi shisha". The contract: copy forward unchanged. ===== */
+  /* background wash */
+  --bg-a:#EAF4F1; --bg-b:#DFEEF2; --bg-c:#E9F0EA;
+  /* glass surfaces */
+  --glass:rgba(255,255,255,.55); --glass-strong:rgba(255,255,255,.78); --glass-soft:rgba(255,255,255,.35);
+  --glass-border:rgba(255,255,255,.9); --glass-inner:inset 0 1px 0 rgba(255,255,255,.95);
+  --blur:20px;
+  /* ink */
+  --ink:#1B2226; --ink-mid:#54666E; --ink-soft:#8DA0A8;
+  --line:rgba(27,60,50,.12); --line-strong:rgba(27,60,50,.26);
+  /* brand mint (from logo #62C9A3) */
+  --mint-700:#0E5E44; --mint-600:#188563; --mint-500:#2FB185; --mint-400:#62C9A3;
+  --mint-glass:rgba(24,133,99,.10); --mint-glass-border:rgba(24,133,99,.22);
+  /* status */
+  --blue-deep:#3D6FB4; --ice-blue:#7AAAEC; --blue-glass:rgba(61,111,180,.12); --blue-glass-border:rgba(61,111,180,.24);
+  --amber:#A8731C; --amber-glass:rgba(168,115,28,.14); --amber-glass-border:rgba(168,115,28,.26);
+  --danger:#CC4257; --danger-deep:#A93245; --danger-glass:rgba(204,66,87,.10); --danger-glass-border:rgba(204,66,87,.3);
+  /* type */
+  --font-display:'Schibsted Grotesk',system-ui,sans-serif;
+  --font-body:'IBM Plex Sans',system-ui,sans-serif;
+  --font-mono:'IBM Plex Mono',monospace;
+  --text-xs:12px; --text-sm:13px; --text-base:15px; --text-md:17px;
+  --text-lg:21px; --text-xl:26px; --text-2xl:33px; --text-3xl:41px; --text-display:52px;
+  /* shape + depth */
+  --radius-sm:8px; --radius-md:12px; --radius-lg:18px; --radius-pill:999px;
+  --shadow-sm:0 2px 8px rgba(27,60,50,.08);
+  --shadow-glass:0 16px 40px rgba(27,60,50,.14);
+  --shadow-float:0 24px 64px rgba(27,60,50,.22);
+  --glow-mint:0 6px 16px rgba(24,133,99,.35);
+}

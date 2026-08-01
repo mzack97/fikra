@@ -1,0 +1,172 @@
+/**
+ * Interaction states — hover, active, focus.
+ *
+ * WHY THIS FILE EXISTS
+ * The design export puts nearly all styling in inline `style` attributes, and an
+ * inline style cannot express a pseudo-class. So the design declared transition
+ * properties (`transition: filter .12s` appears 35 times) but could never define
+ * what those transitions move toward. The result: every element was primed to
+ * animate, and nothing ever triggered.
+ *
+ * These rules supply the missing half. Durations and easing match what the
+ * design already declared inline, so nothing here invents a new motion language
+ * — it completes the one the designer specified.
+ */
+
+/* ---- Buttons ---- */
+
+.btn {
+  cursor: pointer;
+  transition: filter 0.12s ease, transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.btn:hover:not(:disabled) {
+  filter: brightness(1.06);
+}
+
+.btn:active:not(:disabled) {
+  transform: translateY(1px);
+  filter: brightness(0.97);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  filter: grayscale(0.4) opacity(0.55);
+}
+
+.btn-primary:hover:not(:disabled) {
+  box-shadow: var(--glow-mint);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  border-color: var(--line-strong);
+  background: var(--glass-strong);
+}
+
+/* ---- Cards that lead somewhere ---- */
+
+.survey-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.survey-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glass);
+  border-color: var(--mint-glass-border);
+}
+
+/* A locked survey is not clickable, so it must not lift. Signalling
+   interactivity that isn't there is worse than no hover at all. */
+.survey-card[data-locked='true']:hover,
+.survey-card[aria-disabled='true']:hover {
+  transform: none;
+  box-shadow: var(--shadow-sm);
+  border-color: var(--line);
+  cursor: not-allowed;
+}
+
+.stat-card {
+  transition: box-shadow 0.15s ease;
+}
+
+.stat-card:hover {
+  box-shadow: var(--shadow-glass);
+}
+
+/* ---- Navigation ---- */
+
+.side-link,
+.tab-link {
+  transition: background 0.12s ease, color 0.12s ease;
+}
+
+.side-link:hover,
+.tab-link:hover {
+  background: var(--mint-glass);
+  color: var(--mint-700);
+  text-decoration: none;
+}
+
+.side-link[aria-current='page'],
+.tab-link[aria-selected='true'] {
+  background: var(--mint-glass);
+  color: var(--mint-700);
+  font-weight: 600;
+}
+
+/* ---- Rows and chips ---- */
+
+.ledger-row {
+  transition: background 0.12s ease;
+}
+
+.ledger-row:hover {
+  background: var(--glass-soft);
+}
+
+.category-badge[role='button'],
+[data-chip] {
+  cursor: pointer;
+  transition: background 0.12s ease, border-color 0.12s ease;
+}
+
+[data-chip]:hover {
+  border-color: var(--line-strong);
+}
+
+[data-chip][aria-pressed='true'] {
+  background: var(--mint-glass);
+  border-color: var(--mint-glass-border);
+  color: var(--mint-700);
+}
+
+/* ---- Form fields ---- */
+
+.form-field input,
+.form-field select,
+.form-field textarea,
+.otp-box {
+  transition: border-color 0.12s ease, box-shadow 0.12s ease;
+}
+
+.form-field input:hover,
+.form-field select:hover,
+.form-field textarea:hover {
+  border-color: var(--line-strong);
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus,
+.otp-box:focus {
+  border-color: var(--mint-500);
+  box-shadow: 0 0 0 3px var(--mint-glass);
+}
+
+/* ---- Anything the design marked as an action ---- */
+
+[data-action] {
+  cursor: pointer;
+}
+
+[data-action]:hover {
+  filter: brightness(1.05);
+}
+
+/* Motion preferences override everything above. */
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .survey-card,
+  .stat-card,
+  .side-link,
+  .tab-link,
+  .ledger-row,
+  [data-chip],
+  [data-action] {
+    transition: none;
+  }
+  .btn:active:not(:disabled),
+  .survey-card:hover {
+    transform: none;
+  }
+}
